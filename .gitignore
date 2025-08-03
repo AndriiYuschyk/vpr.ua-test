@@ -1,0 +1,18 @@
+/node_modules/
+
+###> PHPStorm files ###
+/.idea/
+###< PHPStorm files ###
+.vscode/
+
+###> MacOS files ###ß
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+###< MacOS files ###
+
+###> cypress environment ###
+cypress.env.json
+cypress.json
+###< cypress environment ###
