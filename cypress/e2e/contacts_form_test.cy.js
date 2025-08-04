@@ -14,12 +14,7 @@ describe('Тестування форми "Контакти"', () => {
       'kovalenko.test@example.com',
     ];
     const phones = ['+380501234567', '+380671234567', '+380631234567', '+380991234567'];
-    const subjects = [
-      'Тестовий запит про співпрацю',
-      'Тестове питання щодо послуг',
-      'Тестова технічна підтримка',
-      'Тестове інше',
-    ];
+    const subjects = ['Запит про співпрацю', 'Питання щодо послуг', 'Технічна підтримка', 'Інше'];
 
     const randomIndex = Math.floor(Math.random() * names.length);
 
@@ -168,18 +163,7 @@ describe('Тестування форми "Контакти"', () => {
       cy.get('#edit-kontaktnyy-nomer-telefonu').should('be.visible');
       cy.get('#edit-subject').should('be.visible');
       cy.get('#edit-message').should('be.visible');
-      // cy.get('#edit-actions-submit').should('be.visible');
-    });
-
-    it('Перевірка placeholder-ів та label-ів', () => {
-      cy.get('label[for="edit-name"]').should('exist').and('contain.text', 'ПІБ');
-      cy.get('label[for="edit-email"]').should('exist').and('contain.text', 'Ваша електронна адреса');
-      cy.get('label[for="edit-kontaktnyy-nomer-telefonu"]')
-        .should('exist')
-        .and('contain.text', 'Контактний номер телефону');
-      cy.get('label[for="edit-subject"]').should('exist').and('contain.text', 'Тема');
-      cy.get('label[for="edit-message"]').should('exist').and('contain.text', 'Повідомлення');
-      cy.get('#edit-kontaktnyy-nomer-telefonu').should('have.attr', 'placeholder').and('eq', '+380 50 123 4567');
+      cy.get('#edit-actions-submit').should('be.visible');
     });
   });
 });

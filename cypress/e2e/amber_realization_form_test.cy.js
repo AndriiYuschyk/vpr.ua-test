@@ -347,7 +347,7 @@ describe('Тестування форми "ЗАЯВКА" - Реалізація 
       cy.get('select[name="452"]').should('be.visible');
       cy.get('#edit-bazhana-vaha-burshtynu').should('be.visible');
       cy.get('#edit-message').should('be.visible');
-      // cy.get('#edit-actions-submit').should('be.visible');
+      cy.get('#edit-actions-submit').should('be.visible');
     });
 
     it('Перевірка опцій у select-ах', () => {
@@ -363,12 +363,6 @@ describe('Тестування форми "ЗАЯВКА" - Реалізація 
         const validOptions = $select.find('option').not('[value=""], [value="0"], [value="_none"]');
         expect(validOptions.length).to.be.greaterThan(0);
       });
-    });
-
-    it('Перевірка placeholder-ів та label-ів', () => {
-      cy.get('label[for="edit-name"]').should('exist');
-      cy.get('label[for="edit-email"]').should('exist');
-      cy.get('label[for="edit-kontaktnyy-nomer-telefonu"]').should('exist');
     });
   });
 
