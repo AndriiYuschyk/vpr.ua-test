@@ -1,5 +1,9 @@
 /node_modules/
 
+###> cypress testing data ###
+/cypress/videos/
+/cypress/screenshots/
+
 ###> PHPStorm files ###
 /.idea/
 ###< PHPStorm files ###
