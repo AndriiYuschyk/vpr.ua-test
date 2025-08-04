@@ -33,12 +33,12 @@ describe('Тестування форми "ЗАЯВКА" - Реалізація 
     };
   };
 
-  // Виправлена функція для вибору рандомного значення з select з візуальним оновленням
+  // Функція для вибору рандомного значення з select з візуальним оновленням
   const selectRandomOptionWithWait = selector => {
     // Очікуємо поки select з'явиться та буде мати опції
     cy.get(selector).should('exist');
 
-    // Очікуємо поки опції завантажяться (крім порожніх)
+    // Очікуємо поки опції завантажаться (крім порожніх)
     cy.get(`${selector} option`).should('have.length.greaterThan', 1);
 
     cy.get(selector).then($select => {
