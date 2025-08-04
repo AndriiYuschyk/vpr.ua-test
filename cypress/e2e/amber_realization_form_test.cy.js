@@ -1,5 +1,5 @@
 describe('Тестування форми "ЗАЯВКА" - Реалізація бурштину', () => {
-  // Генератори тестових даних
+  // Тестові дані для заповнення форми
   const generateRandomData = () => {
     const names = [
       'ТОВ "Тест-Бурштин-Плюс"',
@@ -25,7 +25,7 @@ describe('Тестування форми "ЗАЯВКА" - Реалізація 
       edrpou: edrpouCodes[randomIndex],
       fullName: fullNames[randomIndex],
       position: positions[randomIndex],
-      email: 'amber@test.com',
+      email: 'test@amber.com',
       phone: phones[randomIndex],
       weight: randomWeight.toString(),
       message:
