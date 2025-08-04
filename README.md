@@ -21,7 +21,7 @@ git clone git@github.com:AndriiYuschyk/vpr.ua-test.git .
 git clone git@github.com:AndriiYuschyk/vpr.ua-test.git
 ```
 
-### Встановлюємо пакунки
+### Встановлюємо пакунки і залежності
 
 ```bash
 npm install
